@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Tools</title>
+    <meta name="description" content="A collection of tools I use day-to-day and host for myself." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tools.ericshome.xyz/" />
+    <meta property="og:title" content="Eric's Tools" />
+    <meta property="og:description" content="A collection of tools I use day-to-day and host for myself." />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/124193744?v=4" />
+    <meta name="theme-color" content="#34d399" />
+
+    <style>
+        :root {
+            --bg: #0f1115;
+            --card: #1a1d24;
+            --text: #e6e8eb;
+            --muted: #9aa0aa;
+            --accent: #ffbb4d;
+            --disabled: #555;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem;
+        }
+
+        h1 {
+            margin-bottom: 0.25rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        .tools {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .tool {
+            background: var(--card);
+            border-radius: 10px;
+            padding: 1.25rem;
+            text-decoration: none;
+            color: var(--text);
+            border: 1px solid transparent;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+        }
+
+        .tool:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .tool h2 {
+            margin: 0 0 0.25rem;
+            font-size: 1.1rem;
+        }
+
+        .tool p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+
+        .tool.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+            border-style: dashed;
+        }
+
+        .disclaimer {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem 1.25rem;
+            background: #141821;
+            border-left: 4px solid var(--accent);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: var(--muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Eric’s Tools</h1>
+    <p class="subtitle">
+        A small collection of tools I use day-to-day and host for myself.
+    </p>
+
+
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong><br>
+        These tools are provided as-is for personal use.<br>
+        Do not upload sensitive or illegal content.<br>
+        Please don’t abuse my poor server — services may change, disappear, or break at any time.<br>
+        I’m not responsible for what you upload or how you use these tools.
+    </div>
+
+    <div class="tools">
+        <a class="tool" href="https://it-tools.tools.ericshome.xyz">
+            <h2>IT Tools</h2>
+            <p>Handy utilities for networking, encoding, debugging, and more.</p>
+        </a>
+
+        <a class="tool" href="https://convert.tools.ericshome.xyz">
+            <h2>File Converter</h2>
+            <p>Convert file formats without sketchy online services.</p>
+        </a>
+
+        <div class="tool disabled">
+            <h2>TikTok Viewer</h2>
+            <p>Watch TikToks without the app (temporarily offline until I fix things).</p>
+        </div>
+    </div>
+
+    <!-- <footer>
+        Reminder to put some funny footer here
+    </footer> -->
+</div>
+
+</body>
+</html>
